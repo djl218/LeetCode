@@ -8,7 +8,7 @@ I sure am glad to have LeetCode in my life! :)
 
 This is a collection of some of the LeetCode questions that I have answered.\
 Also be sure to follow me on [LinkedIn](https://www.linkedin.com/in/danielleskosky/) or [Twitter](https://twitter.com/DanielLeskosky).\
-I post solutions to fun algorithm problems nearly almost every day!\
+I post solutions to fun algorithm problems nearly almost every day.\
 Or follow me on [Medium](https://daniel-leskosky.medium.com/) or [DEV](https://dev.to/danielleskosky) so you read my latest blog posts.\
 
 Here are the problems that have detailed explanations on my [blog](https://www.danielleskosky.com/):
