@@ -1,5 +1,8 @@
 # LeetCode
-I started doing problems on LeetCode in 2019 and I have been having fun ever since!
+I started doing problems on LeetCode in 2020.\
+When I first started, I didn't even know what an algorithm was.\
+Now when I look back at how much I have learned, I gotta say:\
+I sure am glad to have LeetCode in my life! :)
 
 ![2021-04-15_18-27](https://user-images.githubusercontent.com/59750603/114945963-4e993800-9e18-11eb-8b46-8aef1322f79b.png)
 
