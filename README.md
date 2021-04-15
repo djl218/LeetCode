@@ -6,7 +6,7 @@ I sure am glad to have LeetCode in my life! :)
 
 ![2021-04-15_18-27](https://user-images.githubusercontent.com/59750603/114945963-4e993800-9e18-11eb-8b46-8aef1322f79b.png)
 
-This is a collection of some of the LeetCode questions that I have answered.\
+This is a collection of some of the LeetCode questions that I have solved.\
 Also be sure to follow me on [LinkedIn](https://www.linkedin.com/in/danielleskosky/) or [Twitter](https://twitter.com/DanielLeskosky).\
 I post solutions to challenging algorithm problems nearly almost every day.\
 Or follow me on [Medium](https://daniel-leskosky.medium.com/) or [DEV](https://dev.to/danielleskosky) so you read my latest blog posts.
