@@ -1,4 +1,4 @@
-[<h2>Click here for detailed explanation</h2>](https://www.danielleskosky.com/path-in-zigzag-labelled-binary-tree/)
+[<h2>Click here for detailed solution</h2>](https://www.danielleskosky.com/path-in-zigzag-labelled-binary-tree/)
 
 <h2>1104. Path In Zigzag Labelled Binary Tree</h2><h3>Medium</h3><hr><div><p>In an infinite binary tree where every node has two children, the nodes are labelled in row order.</p>
 
