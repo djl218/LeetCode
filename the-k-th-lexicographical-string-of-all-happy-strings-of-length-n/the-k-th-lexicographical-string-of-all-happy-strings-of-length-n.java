@@ -1,6 +1,3 @@
-
-// My original approach. Doesn't work. sb wont add to happies,
-// results in stack overflow. Why?
 // Time Complexity: O(n * k); we evaluate k strings of the size n
 // Space Complexity: O(n) for the recursion stack
 /*
