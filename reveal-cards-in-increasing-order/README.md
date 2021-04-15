@@ -1,4 +1,4 @@
-[<h2>Click here for detailed explanation.<h2>](https://www.danielleskosky.com/reveal-cards-in-increasing-order/)
+[<h2>Click here for detailed solution<h2>](https://www.danielleskosky.com/reveal-cards-in-increasing-order/)
 
 <h2>950. Reveal Cards In Increasing Order</h2><h3>Medium</h3><hr><div><p>In a deck of cards, every card has a unique integer.&nbsp; You can order the deck in&nbsp;any order you want.</p>
 
