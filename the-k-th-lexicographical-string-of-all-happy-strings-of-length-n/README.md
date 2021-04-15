@@ -1,3 +1,5 @@
+[<h2>Click here for detailed exlanation.</h2>](https://www.danielleskosky.com/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/)
+
 <h2>1415. The k-th Lexicographical String of All Happy Strings of Length n</h2><h3>Medium</h3><hr><div><p>A <strong>happy string</strong> is a string that:</p>
 
 <ul>
