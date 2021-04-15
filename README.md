@@ -1,4 +1,7 @@
 # LeetCode
+Last year I learned what an algorithm is and I have been having fun ever since!
+
+
 Collection of some of the LeetCode questions that I have answered.
 
 Here are the problems that have detailed explanations on my [blog](https://www.danielleskosky.com/):
