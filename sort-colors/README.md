@@ -1,4 +1,4 @@
-[<h2>Click here for detailed explanation<h2>](https://www.danielleskosky.com/dutch-national-flag-problem/)
+[<h2>Click here for detailed solution<h2>](https://www.danielleskosky.com/dutch-national-flag-problem/)
 
 <h2>75. Sort Colors</h2><h3>Medium</h3><hr><div><p>Given an array <code>nums</code> with <code>n</code> objects colored red, white, or blue, sort them <strong><a href="https://en.wikipedia.org/wiki/In-place_algorithm" target="_blank">in-place</a> </strong>so that objects of the same color are adjacent, with the colors in the order red, white, and blue.</p>
 
