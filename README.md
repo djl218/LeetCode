@@ -1,8 +1,11 @@
 # LeetCode
 Last year I learned what an algorithm is and I have been having fun ever since!
 
+![2021-04-15_18-27](https://user-images.githubusercontent.com/59750603/114945963-4e993800-9e18-11eb-8b46-8aef1322f79b.png)
 
-Collection of some of the LeetCode questions that I have answered.
+This is a collection of some of the LeetCode questions that I have answered.
+Also be sure to follow me on [LinkedIn](https://www.linkedin.com/in/danielleskosky/) or [Twitter](https://twitter.com/DanielLeskosky).
+I post solutions to fun algorithm problems nearly almost every day!
 
 Here are the problems that have detailed explanations on my [blog](https://www.danielleskosky.com/):
 *  [The k-th Lexicographical String of All Happy Strings of Length n](https://github.com/djl218/LeetCode/tree/main/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n)
