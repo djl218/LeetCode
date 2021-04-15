@@ -1,3 +1,5 @@
+[<h2>Click here for detailed explanation.<h2>](https://www.danielleskosky.com/odd-even-linked-list/)
+
 <h2>328. Odd Even Linked List</h2><h3>Medium</h3><hr><div><p>Given the <code>head</code> of a singly linked list, group all the nodes with odd indices together followed by the nodes with even indices, and return <em>the reordered list</em>.</p>
 
 <p>The <strong>first</strong> node is considered <strong>odd</strong>, and the <strong>second</strong> node is <strong>even</strong>, and so on.</p>
