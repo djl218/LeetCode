@@ -1,6 +1,5 @@
 // Time Complexity: O(n * k); we evaluate k strings of the size n
 // Space Complexity: O(n) for the recursion stack
-/*
 class Solution {
     int count = 0;
     String result = "";
@@ -32,11 +31,9 @@ class Solution {
         }
     }
 }
-*/
 
 // Time Complexity: O(3 * 2^(n-1))
 // Space Complexity: O(3 * 2^(n-1) + n)
-/*
 class Solution {
     public String getHappyString(int n, int k) {
         List<String> happies = new ArrayList<>();
@@ -58,7 +55,6 @@ class Solution {
         }
     }
 }
-*/
 
 // Time: O(n)
 // Space: O(1)
