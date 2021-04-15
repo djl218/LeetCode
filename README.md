@@ -1,5 +1,5 @@
 # LeetCode
-I started doing problems on LeetCode in 2019 and I have been having fun ever since!\
+I started doing problems on LeetCode in 2019 and I have been having fun ever since!
 
 ![2021-04-15_18-27](https://user-images.githubusercontent.com/59750603/114945963-4e993800-9e18-11eb-8b46-8aef1322f79b.png)
 
