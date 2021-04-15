@@ -1,4 +1,4 @@
-[<h2>Click here for detailed explanation.<h2>](https://www.danielleskosky.com/daily-temperatures/)
+[<h2>Click here for detailed solution<h2>](https://www.danielleskosky.com/daily-temperatures/)
 
 <h2>739. Daily Temperatures</h2><h3>Medium</h3><hr><div><p>
 Given a list of daily temperatures <code>T</code>, return a list such that, for each day in the input, tells you how many days you would have to wait until a warmer temperature.  If there is no future day for which this is possible, put <code>0</code> instead.
