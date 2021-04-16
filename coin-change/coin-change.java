@@ -1,4 +1,3 @@
-/*
 // Brute force recursion
 class Solution {    
     public int coinChange(int[] coins, int amount) {
@@ -46,9 +45,8 @@ class Solution {
         return memo[idx][amount];    
     }
 }
-*/
+
 // Bottom-up dynamic programming
-/*
 class Solution {
     public int coinChange(int[] coins, int amount) {
         int m = coins.length, n = amount + 1;
@@ -74,7 +72,7 @@ class Solution {
         return dp[m - 1][n - 1] == Integer.MAX_VALUE ? -1 : dp[m - 1][n - 1];
     }
 }
-*/
+
 // Less space dynamic programming
 class Solution {
     public int coinChange(int[] coins, int amount) {
