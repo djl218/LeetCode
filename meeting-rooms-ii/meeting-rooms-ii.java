@@ -20,7 +20,7 @@ class Solution {
         return result;
     }
 }
-/*
+
 // Time: O(nlogn), Space: O(n)
 class Solution {
     public int minMeetingRooms(int[][] intervals) {
@@ -55,4 +55,3 @@ class Solution {
         return result;
     }
 }
-*/
