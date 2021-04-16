@@ -29,7 +29,6 @@ Optimal
 */
 
 // Brute Force
-/*
 class Solution {
     public int firstMissingPositive(int[] nums) {
         Set<Integer> set = new HashSet();
@@ -42,7 +41,6 @@ class Solution {
         return -1;
     }
 }
-*/
 
 // Optimal
 class Solution {
