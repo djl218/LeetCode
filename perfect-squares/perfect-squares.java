@@ -1,4 +1,3 @@
-/*
 // Time: O(n*sqrt(n))
 // Space: O(dp)
 // dp = elements stored in dp matrix
@@ -27,7 +26,7 @@ class Solution {
         return dp[dp.length - 1][dp[0].length - 1];
     }
 }
-*/
+
 // Time: O(n*sqrt(n))
 // Space: O(n)
 class Solution {
