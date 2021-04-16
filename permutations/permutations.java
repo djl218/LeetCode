@@ -21,7 +21,7 @@ class Solution {
         return result;
     }
 }
-/*
+
 class Solution {
     List<List<Integer>> result = new ArrayList<>();
     
@@ -44,4 +44,3 @@ class Solution {
         }
     }
 }
-*/
