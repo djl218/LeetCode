@@ -9,7 +9,7 @@ I sure am glad to have LeetCode in my life! :)
 This is a collection of some of the LeetCode questions that I have solved.\
 Also be sure to follow me on [LinkedIn](https://www.linkedin.com/in/danielleskosky/) and [Twitter](https://twitter.com/DanielLeskosky).\
 I post solutions to challenging algorithm problems nearly almost every day.\
-Follow me on [Medium](https://daniel-leskosky.medium.com/) and [DEV](https://dev.to/danielleskosky) too, so you read my latest blog posts.
+Follow me on [Medium](https://daniel-leskosky.medium.com/) and [DEV](https://dev.to/danielleskosky) too, so you can read my latest blog posts.
 
 My [blog](https://www.danielleskosky.com/) has detailed solutions for the following problems:
 *  [The k-th Lexicographical String of All Happy Strings of Length n](https://github.com/djl218/LeetCode/tree/main/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n)
