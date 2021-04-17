@@ -1,13 +1,13 @@
+// Heap
 // n = nums.length
 // Time: O(n logk)
 // Space: O(n + k)
-/*
 class FreqSort implements Comparator<Map.Entry<Integer, Integer>> {
     @Override
     public int compare(Map.Entry<Integer, Integer> entryA, 
                        Map.Entry<Integer, Integer> entryB)
     {
-        return entryB.getValue() - entryA.getValue();
+        return entryA.getValue() - entryB.getValue();
     }
 }
 
@@ -23,9 +23,9 @@ class Solution {
         /*
         **Alternatively use lambda function instead of Comparator**
         PriorityQueue<Map.Entry<Integer, Integer>> maxHeap = 
-            new PriorityQueue<>((a, b) -> b.getValue() - a.getValue());
+            new PriorityQueue<>((a, b) -> a.getValue() - b.getValue());
         */
-        /*
+        
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
             maxHeap.offer(entry);
             if (maxHeap.size() > k) maxHeap.poll();
@@ -39,8 +39,7 @@ class Solution {
         return result;
     }
 }
-*/
-
+// Quickselect - Hoare's selection algorithm
 // n = nums.length
 // Time: O(n)
 // Space: O(n)
