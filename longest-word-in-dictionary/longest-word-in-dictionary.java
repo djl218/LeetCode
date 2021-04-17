@@ -1,4 +1,3 @@
-/*
 // n = length of words, L = average length of word
 // Time: O(nlognL)
 // Space: O(n)
@@ -18,7 +17,7 @@ class Solution {
         return result;
     }
 }
-*/
+
 // Time: O(nL)
 // Space: O(n)
 class Solution {
