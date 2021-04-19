@@ -3,6 +3,9 @@
 // Time: O(n)
 // Space: O(n)
 // Initial attempt - too many data structures, too many passes
+// Take-away: No need to keep track of bulls in map. Only cows need to be mapped.
+// This removes need for 'bullSpot' and 'secretMap'.
+// Reduces space to O(1).
 class Solution {
     public String getHint(String secret, String guess) {
         int n = secret.length();
