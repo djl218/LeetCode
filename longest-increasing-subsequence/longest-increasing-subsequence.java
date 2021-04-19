@@ -1,4 +1,4 @@
-/*
+// Brute-force recursion
 class Solution {
     public int lengthOfLIS(int[] nums) {
         return findLISLengthRecursive(nums, 0, -1);
@@ -19,8 +19,7 @@ class Solution {
         return Math.max(c1, c2);
     }
 }
-*/
-/*
+// Top down with memoization
 class Solution {
     public int lengthOfLIS(int[] nums) {
         Integer[][] dp = new Integer[nums.length][nums.length+1];
@@ -45,9 +44,9 @@ class Solution {
         return dp[currentIndex][previousIndex+1];
     }
 }
+// Bottom-up dynamic programming with tabulation
 // Recursive Formula
 // if num[i] > num[j] => dp[i] = dp[j] + 1 if there is no bigger LIS for 'i'
-*/
 class Solution {
     public int lengthOfLIS(int[] nums) {
         int max = 1;
