@@ -2,6 +2,7 @@
 // n = secret.length()
 // Time: O(n)
 // Space: O(n)
+// Initial attempt - too many data structures, too many passes
 class Solution {
     public String getHint(String secret, String guess) {
         int n = secret.length();
@@ -36,6 +37,51 @@ class Solution {
                 cowCount++;
                 secretCounts.put(guessDigit, secretCounts.get(guessDigit) - 1);
                 if (secretCounts.get(guessDigit) == 0) secretCounts.remove(guessDigit);
+            }
+        }
+        
+        StringBuilder hint = new StringBuilder();
+        hint.append(bullCount);
+        hint.append('A');
+        hint.append(cowCount);
+        hint.append('B');
+        
+        return hint.toString();
+    }
+}
+
+/*
+secret digits will be stored as positive counts.
+guess digits will be stored as negative counts.
+
+if there is a negative value on the index spot for currect secret digit
+then there was already a guess digit with that value.  this counts as a cow
+
+if there is a positive value on the index spot for current guess digit
+then there was already a secret digit with that value.  this counts as a cow
+*/
+// Time: O(n)
+// Space: O(1)
+class Solution {
+    public String getHint(String secret, String guess) {
+        int n = secret.length();
+        int[] map = new int[10];
+        
+        int bullCount = 0, cowCount = 0;
+        for (int i = 0; i < n; i++) {
+            char secretDigit = secret.charAt(i);
+            char guessDigit = guess.charAt(i);
+            
+            if (secretDigit == guessDigit) {
+                bullCount++;
+            } else {
+                if (map[secretDigit - '0'] < 0)
+                    cowCount++;
+                if (map[guessDigit - '0'] > 0)
+                    cowCount++;
+                
+                map[secretDigit - '0']++;
+                map[guessDigit - '0']--;
             }
         }
         
