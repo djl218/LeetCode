@@ -19,6 +19,7 @@ class Solution {
         return Math.max(c1, c2);
     }
 }
+
 // Top down with memoization
 class Solution {
     public int lengthOfLIS(int[] nums) {
@@ -44,6 +45,7 @@ class Solution {
         return dp[currentIndex][previousIndex+1];
     }
 }
+
 // Bottom-up dynamic programming with tabulation
 // Recursive Formula
 // if num[i] > num[j] => dp[i] = dp[j] + 1 if there is no bigger LIS for 'i'
