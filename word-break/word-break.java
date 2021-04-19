@@ -1,5 +1,4 @@
-/*
-// My attempt with a clear lack of dynamism
+// My attempt with a clear lack of dynamism - doesn't work
 class Solution {
     public boolean wordBreak(String s, List<String> wordDict) {
         Set<String> set = new HashSet(wordDict);
@@ -15,8 +14,7 @@ class Solution {
         return true;
     }
 }
-*/
-/*
+
 // Recursion
 class Solution {
     public boolean wordBreak(String s, List<String> wordDict) {
@@ -33,8 +31,7 @@ class Solution {
         return false;
     }
 }
-*/
-/*
+
 // Top-down with memoization
 class Solution {
     public boolean wordBreak(String s, List<String> wordDict) {
@@ -54,7 +51,7 @@ class Solution {
         return memo[start] = false;
     }
 }
-*/
+
 // Bottom-up dp with tabulation
 class Solution {
     public boolean wordBreak(String s, List<String> wordDict) {
