@@ -21,7 +21,7 @@ class Solution {
 /*
 Was having trouble doing top-down dynamic programming with memoization.
 Difficult to keep track of caching for left and right sides of array.
-Went to discussion board and saw tons of posts with sliding window in description.
+Went to discussion board and saw tons of posts with sliding window in title.
 Realized that I might have been on the wrong track. :)
 Here is my original sliding window implementation.
 */
