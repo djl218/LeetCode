@@ -1,4 +1,7 @@
-/*
+// Recursion
+// n = nums.length
+// Time: O(2^n)
+// Space: O(n)
 class Solution {
     public int rob(int[] nums) {
         return findMax(nums, 0);  
@@ -13,8 +16,10 @@ class Solution {
         return Math.max(skip, steal);
     }
 }
-*/
-/*
+
+// DP with memoization
+// Time: O(n)
+// Space: O(n)
 class Solution {
     public int rob(int[] nums) {
         int dp[] = new int[nums.length];
@@ -34,8 +39,10 @@ class Solution {
         return dp[curr];
     }
 }
-*/
-/*
+
+// DP with tabulation
+// Time: O(n)
+// Space: O(n)
 class Solution {
     public int rob(int[] nums) {
         int n = nums.length;
@@ -49,7 +56,10 @@ class Solution {
         return dp[n];
     }
 }
-*/
+
+// DP - constant space
+// Time: O(n)
+// Space: O(1)
 class Solution {
     public int rob(int[] nums) {
         int n = nums.length;
@@ -63,4 +73,3 @@ class Solution {
         return n2;
     }
 }
-
