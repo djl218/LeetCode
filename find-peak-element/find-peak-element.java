@@ -1,4 +1,4 @@
-
+// Linear scan - probably over-complicated
 class Solution {
     public int findPeakElement(int[] nums) {
         if (nums.length == 1) return 0;
@@ -10,7 +10,8 @@ class Solution {
         return 0;
     }
 }
-/*
+
+// Binary search
 class Solution {
     public int findPeakElement(int[] nums) {
         int lo = 0, hi = nums.length - 1;
@@ -24,4 +25,3 @@ class Solution {
         return lo;
     }
 }
-*/
