@@ -1,8 +1,7 @@
 // Brute-force recursion
 // TLE
-// Time: O(2^n)
-// Space: O(n)
-/*
+// Time: O(2^k)
+// Space: O(k)
 class Solution {
     public int maxScore(int[] cardPoints, int k) {
         int n = cardPoints.length;
@@ -19,7 +18,6 @@ class Solution {
         return Math.max(takeFromBeginning, takeFromEnd);
     }
 }
-*/
 /*
 Was having trouble doing top-down dynamic programming with memoization.
 Difficult to keep track of caching for left and right sides of array.
@@ -28,7 +26,7 @@ Realized that I might have been on the wrong track. :)
 Here is my original sliding window implementation.
 */
 // Sliding window
-// Time: O(n)
+// Time: O(k)
 // Space: O(1)
 class Solution {
     public int maxScore(int[] cardPoints, int k) {
