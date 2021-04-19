@@ -13,7 +13,6 @@
  *     }
  * }
  */
-/*
 // BRUTE FORCE
 // Inorder traversal of BST returns a list
 // of node values that is sorted in ascending order
@@ -38,7 +37,7 @@ class Solution {
         getList(node.right);
     }
 }
-*/
+
 // OPTIMAL
 class Solution {
     TreeNode prev = null;
