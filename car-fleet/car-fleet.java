@@ -1,9 +1,9 @@
 // n = position.length
 // Time: O(n logn)
 // Space: O(n)
-class CarSort implements Comparator<Double[]> {
+class CarSort implements Comparator<double[]> {
     @Override
-    public int compare(Double[] a, Double[] b) {
+    public int compare(double[] a, double[] b) {
         return Double.compare(a[0], b[0]);
     }
 }
@@ -13,14 +13,14 @@ class Solution {
         int n = position.length;
         int fleetCount = 0;
         
-        Double[][] cars = new Double[n][2];
+        double[][] cars = new double[n][2];
         for (int i = 0; i < n; i++) {
             cars[i][0] = (double) position[i];
             cars[i][1] = (double) (target - position[i]) / speed[i];
         }
         
         Arrays.sort(cars, new CarSort());
-        Double slowCar = 0.0;
+        double slowCar = 0.0;
         for (int i = n - 1; i >= 0; i--) {
            if (cars[i][1] > slowCar) {
                fleetCount++;
