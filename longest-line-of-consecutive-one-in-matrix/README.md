@@ -1,3 +1,4 @@
+[Discussion Post (created on 21/3/2021 at 11:47)](https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/solution/)  
 <h2>562. Longest Line of Consecutive One in Matrix</h2><h3>Medium</h3><hr><div>Given a 01 matrix <b>M</b>, find the longest line of consecutive one in the matrix. The line could be horizontal, vertical, diagonal or anti-diagonal.
 
 <p><b>Example:</b><br>
