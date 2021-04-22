@@ -1,6 +1,3 @@
-// sLen = s.length(), tLen = t.length()
-// Time: O(sLen + tLen)
-// Space: O(sLen + tLen)
 class Solution {
     public String minWindow(String s, String t) {
         Map<Character, Integer> sMap = new HashMap<>();
