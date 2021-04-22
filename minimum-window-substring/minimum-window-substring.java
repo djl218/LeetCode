@@ -25,7 +25,6 @@ class Solution {
                     sMap.put(cL, sMap.get(cL) - 1);
                     if (sMap.get(cL) == 0) {
                         sMap.remove(cL);
-                    }
                 }
                 
                 do left++;
