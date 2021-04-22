@@ -23,7 +23,7 @@ class Solution {
                 char cL = s.charAt(left);
                 if (sMap.containsKey(cL)) {
                     sMap.put(cL, sMap.get(cL) - 1);
-                    if (sMap.get(cL) == 0) {
+                    if (sMap.get(cL) == 0)
                         sMap.remove(cL);
                 }
                 
