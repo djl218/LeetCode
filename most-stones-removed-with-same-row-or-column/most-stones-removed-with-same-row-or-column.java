@@ -49,6 +49,10 @@ class Solution {
 
 // ----------------------------------------------------------------------
 
+// Time: O(n)
+// Space: O(n)
+// https://en.wikipedia.org/wiki/Disjoint-set_data_structure
+
 // Union Find
 class Solution {
     public int removeStones(int[][] stones) {
