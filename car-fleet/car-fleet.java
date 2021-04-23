@@ -20,7 +20,7 @@ class Solution {
         }
         
         Arrays.sort(cars, new CarSort());
-        double slowCar = 0.0;
+        double slowCar = 0;
         for (int i = n - 1; i >= 0; i--) {
            if (cars[i][1] > slowCar) {
                fleetCount++;
