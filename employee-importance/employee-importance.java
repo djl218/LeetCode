@@ -22,19 +22,14 @@ class Solution {
             adjList.put(emp.id, emp.subordinates);
         }
         
-        Set<Integer> visited = new HashSet<>();
         Stack<Integer> stack = new Stack<>();
         stack.push(id);
         
         while (!stack.isEmpty()) {
             int currId = stack.pop();
-            if (visited.contains(currId)) continue;
-            visited.add(currId);
             total += map.get(currId);
-            for (int sub : adjList.get(currId)) {
-                if (visited.contains(sub)) continue;
+            for (int sub : adjList.get(currId))
                 stack.push(sub);
-            }
         }
         
         return total;
