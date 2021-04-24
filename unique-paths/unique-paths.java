@@ -1,4 +1,3 @@
-/*
 // Top-down dynamic programming with memoization
 // Time: O(2^(m + n))
 // Space: O(m + n)
@@ -22,7 +21,7 @@ class Solution {
         return dp[m][n];
     }
 }
-*/
+
 // Bottom-up dynamic programming with tabulation
 // Time: O(m * n)
 // Space: O(m * n)
