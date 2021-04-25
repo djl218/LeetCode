@@ -48,6 +48,14 @@ class Solution {
 }
 
 // ----------------------------------------------------------------------
+/*
+  Edit: Whoops!  I put the wrong time complexity for the second solution.  I didn't find the unions very efficiently, but the actual DSU data structure is good.
+  The time for mine is actually O(n^2).
+
+  See this post to find unions better:
+  https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/discuss/197668/Count-the-Number-of-Islands-O(N)
+*/
+
 
 // Time: O(n)
 // Space: O(n)
