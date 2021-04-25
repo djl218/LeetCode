@@ -1,3 +1,4 @@
+[Discussion Post (created on 25/3/2021 at 10:9)](https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/discuss/1176021/Java-Siding-Window)  
 <h2>1839. Longest Substring Of All Vowels in Order</h2><h3>Medium</h3><hr><div><p>A string is considered <strong>beautiful</strong> if it satisfies the following conditions:</p>
 
 <ul>
