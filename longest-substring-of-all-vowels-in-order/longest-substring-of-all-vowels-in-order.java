@@ -1,3 +1,6 @@
+// n = word.length()
+// Time: O(n)
+// Space: O(1)
 class Solution {
     public int longestBeautifulSubstring(String word) {
         int max = 0, vowelCount = 1, subLength = 1;
