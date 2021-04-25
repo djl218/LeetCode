@@ -1,4 +1,3 @@
-/*
 // Time: O(NKlogK)
 // Space: O(NK)
 // N is length of strs
@@ -24,7 +23,7 @@ class Solution {
         return result;
     }
 }
-*/
+
 // Time and Space: O(NK)
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
