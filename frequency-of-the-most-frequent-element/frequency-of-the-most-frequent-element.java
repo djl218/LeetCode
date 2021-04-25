@@ -1,6 +1,6 @@
 // n = nums.length
-// Time: O(n)
-// Space: O(1)
+// Time: O(n log n)
+// Space: O(n)
 class Solution {
     public int maxFrequency(int[] nums, int k) {
         int n = nums.length;
