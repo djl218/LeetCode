@@ -13,43 +13,52 @@
  *     }
  * }
  */
-// BRUTE FORCE
-// Inorder traversal of BST returns a list
-// of node values that is sorted in ascending order
-class Solution {
-    List<Integer> nodes = new ArrayList<>();
-    
-    public boolean isValidBST(TreeNode root) {
-        if (root == null) return false;
-        getList(root);
-        for (int i = 1; i < nodes.size(); i++) {
-            if (nodes.get(i) <= nodes.get(i - 1)) {
-                return false;
-            }
-        }
-        return true;
-    }
-    
-    private void getList(TreeNode node) {
-        if (node == null) return;
-        getList(node.left);
-        nodes.add(node.val);
-        getList(node.right);
-    }
-}
 
-// OPTIMAL
+// n = number of nodes
+// Time: O(n)
+// Space: O(n)
 class Solution {
-    TreeNode prev = null;
+    List<Integer> inOrder = new ArrayList<>();
     
     public boolean isValidBST(TreeNode root) {
         if (root == null) return true;
+        helper(root);
+        
+        for (int i = 1; i < inOrder.size(); i++) {
+            if (inOrder.get(i) <= inOrder.get(i - 1))
+                return false;
+        }
+        
+        return true;
+    }
+    
+    private void helper(TreeNode node) {
+        if (node == null) return;
+        
+        helper(node.left);
+        inOrder.add(node.val);
+        helper(node.right);
+    }
+}
+
+// n = number of nodes
+// h = height of tree
+// Time: O(n)
+// Space: O(h) but possible O(n) if all nodes are on one side
+class Solution {
+    public boolean isValidBST(TreeNode root) {
         return helper(root, Long.MIN_VALUE, Long.MAX_VALUE);
     }
     
-    private boolean helper(TreeNode node, long lo, long hi) {
+    private boolean helper(TreeNode node, long min, long max) {
         if (node == null) return true;
-        if (node.val <= lo || node.val >= hi) return false;
-        return helper(node.left, lo, node.val) && helper(node.right, node.val, hi);
+        
+        if (node.val >= max) return false;
+        if (node.val <= min) return false;
+        
+        boolean left = helper(node.left, min, node.val);
+        boolean right = helper(node.right, node.val, max);
+        
+        return left && right;
     }
 }
