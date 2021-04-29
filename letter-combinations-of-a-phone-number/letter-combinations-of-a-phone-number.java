@@ -1,5 +1,5 @@
 // n = digits.length()
-// Time: O((4^n) * n)
+// Time: O((4^n) * n) 4 represents longest String in keys[]
 // Space: O(n)
 
 class Solution {
