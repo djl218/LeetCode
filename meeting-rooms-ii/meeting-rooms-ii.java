@@ -1,4 +1,9 @@
-// Time: O(nlogn), Space: O(n)
+// Both solutions have same time and space complexity
+// Just two different ways to do it
+
+// n = intervals.length
+// Time: O(n log n)
+// Space: O(n)
 class Solution {
     public int minMeetingRooms(int[][] intervals) {
         Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
@@ -7,48 +12,38 @@ class Solution {
         
         int result = 1;
         for (int i = 1; i < intervals.length; i++) {
-            if (intervals[i][0] < minHeap.peek()) {
-                minHeap.offer(intervals[i][1]);
+            if (intervals[i][0] < minHeap.peek())
                 result++;
-            } else {
+            else
                 minHeap.poll();
-                minHeap.offer(intervals[i][1]);
-            }
+            
+            minHeap.offer(intervals[i][1]);
         }
         
         return result;
     }
 }
 
-// Time: O(nlogn), Space: O(n)
 class Solution {
     public int minMeetingRooms(int[][] intervals) {
-        int n = intervals.length;
-        // Use Integer so sort works
-        // not sure why it doesn't work for primitive type here
-        Integer[] starts = new Integer[n];
-        Integer[] ends = new Integer[n];
+        int n = intervals.length; 
+        int[] starts = new int[n];
+        int[] ends = new int[n];
         
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < intervals.length; i++) {
             starts[i] = intervals[i][0];
             ends[i] = intervals[i][1];
         }
         
-        // sorts ascending by default
-        // wrote lambda anyways for clarity
-        Arrays.sort(starts, (a, b) -> a - b);
-        Arrays.sort(ends, (a, b) -> a - b);
+        Arrays.sort(starts);
+        Arrays.sort(ends);
         
-        int result = 0;
-        int startPointer = 0, endPointer = 0;
-        while (startPointer < n) {
-            if (starts[startPointer] >= ends[endPointer]) {
-                result--;
+        int result = 0, endPointer = 0;
+        for (int start : starts) {
+            if (start < ends[endPointer])
+                result++;
+            else
                 endPointer++;
-            }
-            
-            result++;
-            startPointer++;
         }
         
         return result;
