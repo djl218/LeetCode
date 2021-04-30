@@ -1,4 +1,3 @@
-/*
 // Both solutions have same time and space complexity
 // n = nums.length
 // Time: O(log n)
@@ -24,7 +23,6 @@ class Solution {
         return -1;
     }
 }
-*/
 
 class Solution {
     public int search(int[] nums, int target) {
