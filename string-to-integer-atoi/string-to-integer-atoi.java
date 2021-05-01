@@ -47,9 +47,8 @@ class Solution {
             
             if (c != 0) leadingZero = false;
             
-            if (!leadingZero) {
+            if (!leadingZero)
                 sbNoZer.append(c);
-            }
         }
         
         // Make sure that 'sbNoZer' isn't bigger than Long max
