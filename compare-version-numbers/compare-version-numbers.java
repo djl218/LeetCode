@@ -1,6 +1,7 @@
-// n = Max(version1.length(), version2.length())
-// Time: O(n)
-// Space: O(n)
+// v1 = version.length(), v2 = version2.length()
+// max = Max(version1.length(), version2.length())
+// Time: O(v1 + v2 + max)
+// Space: O(v1 + v2 + max)
 class Solution {
     public int compareVersion(String version1, String version2) {
         String[] v1Arr = version1.split("\\.");
