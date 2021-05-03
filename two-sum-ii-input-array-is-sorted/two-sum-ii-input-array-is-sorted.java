@@ -1,4 +1,3 @@
-/*
 // n = numbers.length
 // Time: O(n)
 // Space: O(n)
@@ -15,7 +14,7 @@ class Solution {
         return new int[0];
     }
 }
-*/
+
 // Time: O(n)
 // Space: O(1)
 class Solution {
