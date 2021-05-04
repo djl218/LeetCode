@@ -1,6 +1,6 @@
 // n = nums.length
 // Time: O(n^2)
-// Space: O(n)
+// Space: O(n) - this is for sort; ignoring space for output
 class Solution {
     List<List<Integer>> result = new ArrayList<>();
     
