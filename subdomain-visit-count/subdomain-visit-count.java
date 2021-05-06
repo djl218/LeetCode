@@ -1,3 +1,5 @@
+// Time: O(1) - it is specified that length of cpdomains will not exceed 100
+// Space: O(1) - for same reason as above
 class Solution {
     public List<String> subdomainVisits(String[] cpdomains) {
         Map<String, Integer> counts = new HashMap<>();
