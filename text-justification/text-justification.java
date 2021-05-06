@@ -8,12 +8,11 @@ class Solution {
         while (idx < words.length) {
             int count = words[idx].length();
             int last = idx + 1;
-            
             while (last < words.length) {
-                if (words[last].length() + count + 1 > maxWidth)
+                if (count + words[last].length() + 1 > maxWidth)
                     break;
                 
-                count += 1 + words[last].length();
+                count += words[last].length() + 1;
                 last++;
             }
             
@@ -30,24 +29,22 @@ class Solution {
                     sb.append(" ");
                 }
             } else {
-                int spaces = (maxWidth - count) / diff;
+                int space = (maxWidth - count) / diff;
                 int r = (maxWidth - count) % diff;
                 for (int i = idx + 1; i < last; i++) {
-                    for (int s = spaces; s > 0; s--) {
+                    for (int s = space; s >= 0; s--) {
                         sb.append(" ");
                     }
                     if (r > 0) {
                         sb.append(" ");
                         r--;
                     }
-                    sb.append(" ");
                     sb.append(words[i]);
                 }
             }
             result.add(sb.toString());
             idx = last;
         }
-        
         return result;
     }
 }
