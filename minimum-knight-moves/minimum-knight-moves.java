@@ -16,9 +16,7 @@ class Solution {
             int size = queue.size();
             for (int i = 0; i < size; i++) {
                 int[] curr = queue.poll();
-                if (x == curr[0] && y == curr[1])
-                    return steps;
-            
+                if (curr[0] == x && curr[1] == y) return steps;
                 for (int[] move : moves) {
                     int nextX = move[0] + curr[0];
                     int nextY = move[1] + curr[1];
@@ -33,7 +31,6 @@ class Solution {
             }
             steps++;
         }
-        
         return steps;
     }
 }
