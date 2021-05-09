@@ -1,6 +1,4 @@
-// Question 2
 // Binary Search
-
 class Solution {
     public int maxDistance(int[] nums1, int[] nums2) {
         int n1 = nums1.length;
@@ -24,7 +22,7 @@ class Solution {
         return max;
     }
 }
-/*
+
 // Brute Force
 class Solution {
     public int maxDistance(int[] nums1, int[] nums2) {
@@ -41,4 +39,4 @@ class Solution {
         
         return max;
     }
-}*/
+}
