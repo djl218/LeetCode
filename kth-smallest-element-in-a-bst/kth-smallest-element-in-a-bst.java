@@ -13,7 +13,7 @@
  *     }
  * }
  */
-/*
+
 // n = number of nodes
 // Time: O(n)
 // Space: O(n)
@@ -32,7 +32,7 @@ class Solution {
         inOrder(node.right, list);
     }
 }
-*/
+
 // Solution inspired by super smart official LeetCode solution
 // n = number of nodes
 // h = height of tree = log(n) for average balanced tree
