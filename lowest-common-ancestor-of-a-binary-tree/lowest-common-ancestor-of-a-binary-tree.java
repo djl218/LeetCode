@@ -9,8 +9,8 @@
  */
 
 // n = number of nodes
-// Time: O(n)
-// Space: O(n)
+// Time: O(n) - in worst case we might visit all of the nodes
+// Space: O(n) - in worst case tree might be unbalanced
 class Solution {
     TreeNode LCA = new TreeNode();
     
