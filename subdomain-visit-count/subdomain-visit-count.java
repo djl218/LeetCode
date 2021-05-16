@@ -4,13 +4,15 @@ class Solution {
     public List<String> subdomainVisits(String[] cpdomains) {
         List<String> result = new ArrayList<>();
         Map<String, Integer> map = new HashMap<>();
-        for (String cp : cpdomains) {
-            String[] split = cp.split("\\s+");
-            int count = Integer.valueOf(split[0]);
-            String[] domains = split[1].split("\\.");
+        for (String cpdomain : cpdomains) {
+            String[] cp = cpdomain.split("\\s+");
+            
+            int count = Integer.valueOf(cp[0]);
+            String[] urls = cp[1].split("\\.");
+            
             StringBuilder sb = new StringBuilder();
-            for (int i = domains.length - 1; i >= 0; i--) {
-                sb.insert(0, domains[i]);
+            for (int i = urls.length - 1; i >= 0; i--) {
+                sb.insert(0, urls[i]);
                 String key = sb.toString();
                 map.put(key, map.getOrDefault(key, 0) + count);
                 sb.insert(0, ".");
