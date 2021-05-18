@@ -1,3 +1,4 @@
+[Discussion Post (created on 17/4/2021 at 23:16)](https://leetcode.com/problems/distribute-candies-to-people/discuss/1215115/Java-Easy-to-Understand)  
 <h2>1103. Distribute Candies to People</h2><h3>Easy</h3><hr><div><p>We distribute some&nbsp;number of <code>candies</code>, to a row of <strong><code>n =&nbsp;num_people</code></strong>&nbsp;people in the following way:</p>
 
 <p>We then give 1 candy to the first person, 2 candies to the second person, and so on until we give <code>n</code>&nbsp;candies to the last person.</p>
