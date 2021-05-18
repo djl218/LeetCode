@@ -1,3 +1,4 @@
+[Discussion Post (created on 18/4/2021 at 16:54)](https://leetcode.com/problems/construct-binary-tree-from-string/discuss/1216695/Java-Stack-Clean-and-Readable)  
 <h2>536. Construct Binary Tree from String</h2><h3>Medium</h3><hr><div><p>You need to construct a binary tree from a string consisting of parenthesis and integers.</p>
 
 <p>The whole input represents a binary tree. It contains an integer followed by zero, one or two pairs of parenthesis. The integer represents the root's value and a pair of parenthesis contains a child binary tree with the same structure.</p>
