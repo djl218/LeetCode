@@ -1,3 +1,4 @@
+[Discussion Post (created on 17/4/2021 at 20:58)](https://leetcode.com/problems/print-words-vertically/discuss/1214978/Java-Clean-and-Readable)  
 <h2>1324. Print Words Vertically</h2><h3>Medium</h3><hr><div><p>Given a string <code>s</code>.&nbsp;Return&nbsp;all the words vertically in the same order in which they appear in <code>s</code>.<br>
 Words are returned as a list of strings, complete with&nbsp;spaces when is necessary. (Trailing spaces are not allowed).<br>
 Each word would be put on only one column and that in one column there will be only one word.</p>
