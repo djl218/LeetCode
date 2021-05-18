@@ -1,4 +1,3 @@
-/*
 // Initial attempt - TLE
 // 10/15 test cases passed
 class Solution {
@@ -36,8 +35,7 @@ class Solution {
         }
     }
 }
-*/
-
+/************************************************************/
 // clever solution inspired by Leet Elite
 class Solution {
     int beautifulCount = 0;
