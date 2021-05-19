@@ -1,3 +1,4 @@
+[Discussion Post (created on 18/4/2021 at 22:51)](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/discuss/1216986/Java-Binary-Search-Clean-and-Readable)  
 <h2>1482. Minimum Number of Days to Make m Bouquets</h2><h3>Medium</h3><hr><div><p>Given an integer array <code>bloomDay</code>, an integer <code>m</code> and an integer <code>k</code>.</p>
 
 <p>We need to make <code>m</code>&nbsp;bouquets. To make a bouquet,&nbsp;you need to use <code>k</code> <strong>adjacent flowers</strong> from the garden.</p>
