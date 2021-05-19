@@ -2,7 +2,7 @@
 // n = bloomDay.length
 // Time: O(n + (n log d))
 // Space: O(1)
-
+// not 100% sure on this complexity analysis
 class Solution {
     int[] bloomDay;
     int m, k;
