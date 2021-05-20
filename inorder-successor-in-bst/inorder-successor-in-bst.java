@@ -7,7 +7,12 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-
+/*
+    After passing the tests and looking at the official solution,
+    I realize that 'prev' might not have been the best name choice, 
+    as sometimes 'prev' will sometimes not correspond to the immediately
+    previous node.  Just a heads up.
+*/
 // n = number of nodes
 // Time: O(n)
 // Space: O(1)
