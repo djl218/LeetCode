@@ -1,3 +1,6 @@
+// n = answers.length
+// Time: O(n)
+// Space: O(n)
 class Solution {
     public int numRabbits(int[] answers) {
         Map<Integer, Integer> map = new HashMap<>();
