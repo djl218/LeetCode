@@ -1,4 +1,3 @@
-/*
 // Rotate elements by 1 step for k cycles
 class Solution {
     public void rotate(int[] nums, int k) {
@@ -38,7 +37,7 @@ class Solution {
         }
     }
 }
-*/
+
 // Coolest way to do it :)
 class Solution {
     public void rotate(int[] nums, int k) {
