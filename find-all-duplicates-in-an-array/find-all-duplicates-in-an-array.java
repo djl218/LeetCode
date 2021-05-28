@@ -26,6 +26,4 @@ class Solution {
         nums[a] = nums[b];
         nums[b] = temp;
     }
-}
-
-    
+}    
