@@ -17,9 +17,8 @@ class Solution {
             map.get(list).add(string);
         }
         
-        for (List<Integer> list : map.keySet()) {
+        for (List<Integer> list : map.keySet())
             result.add(map.get(list));
-        }
         
         return result;
     }
