@@ -1,4 +1,4 @@
-/*
+// DFS
 // m = grid.length, n = grid[0].length
 // Time: O(m * n)
 // Space: O(m * n)
@@ -32,7 +32,8 @@ class Solution {
         dfs(i, j - 1);       
     }
 }
-*/
+
+// BFS
 // m = grid.length, n = grid[0].length
 // Time: O(m * n)
 // Space: O(min(m, n))
