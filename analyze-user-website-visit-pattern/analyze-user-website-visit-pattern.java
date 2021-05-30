@@ -1,3 +1,7 @@
+// n = username.length = timestamp.length = website.length
+// Time: O(n^3)
+// Space: O(n)
+// Not 100% sure on this complexity analysis
 class Sort3s implements Comparator<Map.Entry<List<String>, Integer>> {
     @Override
     public int compare(Map.Entry<List<String>, Integer> a, Map.Entry<List<String>, Integer> b) {
