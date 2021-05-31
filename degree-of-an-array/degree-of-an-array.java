@@ -1,5 +1,5 @@
 // n = nums.length
-// Time: O(n)
+// Time: O(n) might be O(n^2) . . . depends who you ask
 // Space: O(n)
 class Solution {
     public int findShortestSubArray(int[] nums) {
