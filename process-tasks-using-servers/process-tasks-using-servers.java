@@ -1,5 +1,5 @@
 // n = servers.length, m = tasks.length
-// Time: O(m log n)
+// Time: O((m + n)log n)
 // Space: O(n)
 class Available implements Comparator<int[]> {
     @Override
