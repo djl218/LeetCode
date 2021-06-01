@@ -8,7 +8,6 @@ class Solution {
             a = answer;
             b = carry;
         }
-        
         return a;
     }
 }
