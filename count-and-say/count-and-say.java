@@ -3,7 +3,6 @@
 // Space: O(m)
 class Solution {
     public String countAndSay(int n) {
-        Map<Character, Integer> map = new HashMap<>();
         String curr = "1";
         while (n-- > 1) {
             StringBuilder sb = new StringBuilder();
