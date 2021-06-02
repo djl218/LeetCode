@@ -1,6 +1,6 @@
 // n = wordsDict.length
-// Time: O(n) for instantaition of WordDistance class
-//       O(n) for shortest method
+// Time:  O(n) for instantaition of WordDistance class
+//        O(n) for shortest method
 // Space: O(n)
 class WordDistance {
     Map<String, List<Integer>> map;
