@@ -1,5 +1,5 @@
 // n = wordsDict.length
-// Time:  O(n) for instantaition of WordDistance class
+// Time:  O(n) for instantiation of WordDistance class
 //        O(n) for shortest method
 // Space: O(n)
 class WordDistance {
