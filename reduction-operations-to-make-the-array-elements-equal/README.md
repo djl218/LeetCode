@@ -1,3 +1,4 @@
+[Discussion Post (created on 7/5/2021 at 8:37)](https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/discuss/1257135/Java-Sort-Fast-and-Easy)  
 <h2>1887. Reduction Operations to Make the Array Elements Equal</h2><h3>Medium</h3><hr><div><p>Given an integer array <code>nums</code>, your goal is to make all elements in <code>nums</code> equal. To complete one operation, follow these steps:</p>
 
 <ol>
