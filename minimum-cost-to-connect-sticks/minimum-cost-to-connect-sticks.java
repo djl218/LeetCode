@@ -17,6 +17,7 @@ class Solution {
             totalCost += cost;
             minHeap.offer(cost);
         }
+        
         return totalCost;
     }
 }
