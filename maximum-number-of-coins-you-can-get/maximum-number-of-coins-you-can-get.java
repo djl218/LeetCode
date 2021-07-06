@@ -1,6 +1,6 @@
 // n = piles.length
 // Time: O(n log n)
-// Space: O(1)
+// Space: O(n)
 class Solution {
     public int maxCoins(int[] piles) {
         Arrays.sort(piles);
