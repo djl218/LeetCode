@@ -12,27 +12,15 @@ class Solution {
                 int prev = 0;
                 Set<String> twoLetterSet = new HashSet<>();
                 for (int j = i + 1; j < n; j++) {
-                    if (j == i + 1) {
-                        StringBuilder sb = new StringBuilder();
-                        sb.append(s.charAt(i));
-                        sb.append(s.charAt(j));
-                        twoLetterSet.add(sb.toString());
-                    }
-                    if (j > i + 1 && s.charAt(i) != s.charAt(j)) {
-                        StringBuilder sb = new StringBuilder();
-                        sb.append(s.charAt(i));
-                        sb.append(s.charAt(j));
-                        twoLetterSet.add(sb.toString());
-                    }
                     if (j > i + 1 && s.charAt(i) == s.charAt(j)) {
                         palindromicSubsequenceCount -= prev;
                         palindromicSubsequenceCount += twoLetterSet.size();
                         prev = twoLetterSet.size();
-                        StringBuilder sb = new StringBuilder();
-                        sb.append(s.charAt(i));
-                        sb.append(s.charAt(j));
-                        twoLetterSet.add(sb.toString());
                     }
+                    StringBuilder sb = new StringBuilder();
+                    sb.append(s.charAt(i));
+                    sb.append(s.charAt(j));
+                    twoLetterSet.add(sb.toString());
                 }
             }
             singleLetterSet.add(s.charAt(i));
