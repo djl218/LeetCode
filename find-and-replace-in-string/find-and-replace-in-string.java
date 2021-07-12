@@ -1,6 +1,7 @@
-// n = S.length(), k = indexes.length
-// Time: O(n + k)
-// Space: O(k)
+// n = S.length()
+// Time: O(n)
+// Space: O(n)
+// indexes.length will never exceed n, so it can just be considered O(n)
 class Solution {
     public String findReplaceString(String S, int[] indexes, String[] sources, String[] targets) {
         Map<Integer, String[]> map = new HashMap<>();
