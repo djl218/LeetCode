@@ -20,7 +20,7 @@ class ProductOfNumbers {
         }
     }
     
-    // Time: O(1)
+    // Time: O(1) - except if n == k
     public int getProduct(int k) {
         int n = preList.size();
         if (n < k) return 0;
