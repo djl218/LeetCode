@@ -1,8 +1,8 @@
 // n = words.length
 // Time: O(n)
 // Space: O(1)
-// words[i].length <= 20 so can be considered constant
-// order.length == 26 so can be considered constant
+// words[i].length() <= 20 so can be considered constant
+// order.length() == 26 so can be considered constant
 class Solution {
     public boolean isAlienSorted(String[] words, String order) {
         for (int i = 1; i < words.length; i++) {
