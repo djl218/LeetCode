@@ -31,6 +31,6 @@ class Solution {
             }
         }
         
-        return new ArrayList<>(result);
+        return result;
     }
 }
