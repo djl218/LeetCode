@@ -1,6 +1,6 @@
 // n = text.split(" ").length, m = max(text[i].length())
 // Time: O(m * n)
-// Space: (1) - set will contain max of 26 characters
+// Space: O(1) - set will contain max of 26 characters
 class Solution {
     public int canBeTypedWords(String text, String brokenLetters) {
         Set<Character> set = new HashSet<>();
