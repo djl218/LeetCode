@@ -1,5 +1,5 @@
 // n = transactions.length
-// Time: O(n)
+// Time: O(n^2)
 // Space: O(n)
 class Solution {
     public List<String> invalidTransactions(String[] transactions) {
