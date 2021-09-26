@@ -14,7 +14,6 @@ class Solution {
         }
         visited = new HashSet<>();
         for (int node : adj.keySet()) {
-            System.out.println(node);
             if (!visited.contains(node)) {
                 count++;
                 dfs(adj, node);
