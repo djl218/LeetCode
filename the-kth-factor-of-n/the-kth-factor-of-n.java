@@ -1,4 +1,3 @@
-/*
 // Brute Force
 // Time: O(n)
 // Space: O(1)
@@ -16,7 +15,7 @@ class Solution {
         return k == 1 ? n : -1;
     }
 }
-*/
+
 // Heap
 // Time: O(sqrt(n) * log k)
 // Space: O(min(k, sqrt(n)))
