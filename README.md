@@ -8,7 +8,6 @@ I sure am glad to have LeetCode in my life! :)
 
 This is a collection of some of the LeetCode questions that I have solved.\
 Also be sure to follow me on [LinkedIn](https://www.linkedin.com/in/danielleskosky/) and [Twitter](https://twitter.com/DanielLeskosky).\
-I post solutions to challenging algorithm problems nearly almost every day.\
 Follow me on [Medium](https://daniel-leskosky.medium.com/) and [DEV](https://dev.to/danielleskosky) too, so you can read my latest [blog](https://www.danielleskosky.com/) posts.
 
 <h3>My blog has detailed solutions for the following problems:</h3>
