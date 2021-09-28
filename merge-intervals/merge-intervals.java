@@ -20,7 +20,6 @@ class Solution {
                 currStart = intervals[i][0];
                 currEnd = Math.max(currEnd, intervals[i][1]);
             }
-            
             if (i == n - 1) {
                 merged.add(new int[]{currStart, currEnd});
             }
