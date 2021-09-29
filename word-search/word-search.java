@@ -1,3 +1,6 @@
+// n = number of cells in board, l = length of word
+// Time: O(n * 3^l)
+// Space: O(n)
 class Solution {
     boolean wordExists = false;
     int[][] dirs = new int[][]{{0,1},{1,0},{0,-1},{-1,0}};
