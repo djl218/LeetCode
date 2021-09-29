@@ -1,42 +1,46 @@
-// n = number of cells on board
-// l = word.length()
-// Time: O(n*3^l)
-// Space: O(l)
 class Solution {
-    private char[][] board;
-    private boolean[][] visited;
-    private int m;
-    private int n;
+    boolean wordExists = false;
+    int[][] dirs = new int[][]{{0,1},{1,0},{0,-1},{-1,0}};
+    int m, n;
+    boolean[][] visited;
     
     public boolean exist(char[][] board, String word) {
-        this.board = board;
         m = board.length;
         n = board[0].length;
-        this.visited = new boolean[m][n];
+        visited = new boolean[m][n];
+        
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                if (backtrack(i, j, word, 0)) {
-                    return true;
+                if (board[i][j] == word.charAt(0)) {
+                    backtrack(board, word, 0, i, j);
+                    if (wordExists) {
+                        return true;
+                    }
                 }
             }
         }
+        
         return false;
     }
     
-    private boolean backtrack(int row, int col, String word, int index) {
-        int[][] dir = new int[][]{{1, 0,}, {0, 1}, {-1, 0}, {0, -1}};
-        if (index >= word.length()) return true;
-        if (index >= word.length() || row < 0 || row >= m || col < 0 || col >= n
-           || this.board[row][col] != word.charAt(index) || visited[row][col]) return false;
-
-        boolean ret = false;
-        visited[row][col] = true;
-        
-        for (int i = 0; i < dir.length; i++) {
-            ret = backtrack(row + dir[i][0], col + dir[i][1], word, index + 1);
-            if (ret) break;
+    private void backtrack(char[][] board, String word, int idx, int x, int y) {
+        if (idx == word.length() - 1 && word.charAt(idx) == board[x][y]) {
+            wordExists = true;
+            return;
         }
-        visited[row][col] = false;
-        return ret;
+        if (word.charAt(idx) != board[x][y]) {
+            return;
+        }
+        visited[x][y] = true;
+        for (int[] dir : dirs) {
+            int nextX = x + dir[0];
+            int nextY = y + dir[1];
+            if (nextX >= 0 && nextX < m && nextY >= 0 && nextY < n 
+                && word.charAt(idx + 1) == board[nextX][nextY]
+                && !visited[nextX][nextY]) {
+                backtrack(board, word, idx + 1, nextX, nextY);
+            }
+        }
+        visited[x][y] = false;
     }
 }
