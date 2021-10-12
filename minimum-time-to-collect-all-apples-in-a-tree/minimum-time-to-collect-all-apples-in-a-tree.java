@@ -15,18 +15,18 @@ class Solution {
         return dfs(0, adj, hasApple, 0);
     }
     
-    private int dfs(int parent, Map<Integer, List<Integer>> adj, List<Boolean> hasApple, int oneEdgeTime) {
+    private int dfs(int parent, Map<Integer, List<Integer>> adj, List<Boolean> hasApple, int baseTime) {
         if (visited.contains(parent)) {
             return 0;
         }
         visited.add(parent);
-        int allEdgeTime = 0;
+        int totalTime = 0;
         for (int child : adj.get(parent)) {
-            allEdgeTime += dfs(child, adj, hasApple, 2);
+            totalTime += dfs(child, adj, hasApple, 2);
         }
-        if (allEdgeTime == 0 && !hasApple.get(parent)) {
+        if (totalTime == 0 && !hasApple.get(parent)) {
             return 0;
         }
-        return allEdgeTime + oneEdgeTime;
+        return totalTime + baseTime;
     }
 }
