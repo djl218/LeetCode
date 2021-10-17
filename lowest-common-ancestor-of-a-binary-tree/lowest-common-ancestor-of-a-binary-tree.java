@@ -9,26 +9,29 @@
  */
 
 // n = number of nodes
-// Time: O(n) - in worst case we might visit all of the nodes
-// Space: O(n) - in worst case tree might be unbalanced
+// Time: O(n)
+// Space: O(n)
 class Solution {
-    TreeNode LCA = new TreeNode();
+    TreeNode LCA = null;
     
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        helper(root, p, q);
+        findLCA(root, p, q);
         return LCA;
     }
     
-    private boolean helper(TreeNode node, TreeNode p, TreeNode q) {
-        if (node == null) return false;
+    private boolean findLCA(TreeNode node, TreeNode p, TreeNode q) {
+        if (node == null) {
+            return false;
+        }
         
-        int left = helper(node.left, p, q) ? 1 : 0;
-        int right = helper(node.right, p, q) ? 1 : 0;
-        int curr = (node == p || node == q) ? 1 : 0;
+        boolean left = findLCA(node.left, p, q) ? true : false;
+        boolean right = findLCA(node.right, p, q) ? true : false;
+        boolean found = (node == p || node == q) ? true : false;
         
-        if (left + right + curr > 1)
+        if (left && right || left && found || right && found) {
             LCA = node;
+        }
         
-        return left + right + curr > 0;
+        return left || right || found;
     }
 }
