@@ -9,10 +9,10 @@ class Solution {
         while (min < max) {
             mid = min + (max - min) / 2;
             int currSum = divSum(nums, mid);
-            if (currSum <= threshold) {
-                max = mid;
-            } else {
+            if (currSum > threshold) {
                 min = mid + 1;
+            } else {
+                max = mid;
             }
         }
         return min;
